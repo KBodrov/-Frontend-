@@ -23,7 +23,7 @@ header{
 header .search_bar{
     float: left;
     margin-top: -30px;
-    margin-left: 350px;
+    margin-left: 260px;
 }
 
 .search_bar input[type=text]{
@@ -75,7 +75,7 @@ header input[type=text]::placeholder{
 }
 
 .sidebar{
-    background: #cccccc;
+    background: #fff;
     border-right-style: solid;
     border-right-color: #a6a6a6;
     margin-top: 70px;
@@ -124,18 +124,20 @@ header input[type=text]::placeholder{
 
 label #sidebar_btn{
     z-index: 1;
-    color: #fff;
-    position: fixed;
+    color: #595959;
+    position: absolute;
     cursor: pointer;
-    left: 300px;
-    font-size: 20px;
-    margin: 5px 0;
+    left: 200px;
+    top: 10px;
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
     transition: 0.5s;
     transition-property: background;
 }
 
 label #sidebar_btn:hover{
-    color: #cccccc;
+    color: #a6a6a6;
 
 }
 
