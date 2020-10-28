@@ -1,11 +1,15 @@
-.equal-height-container {
+body {
+    font-size: 20px;
+}
+
+.main {
     max-width: 900px;
-    margin: 0 auto;
-    margin-top: 100px;
-    background-color: white;
+    margin: 2em auto 2em auto;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    font-size: 40px;
+    font-size: 1.5em;
+    align-items: center;
 }
 
 .row {
@@ -15,9 +19,9 @@
 }
 
 .field {
-    margin: 4px;
+    margin: 0.1em;
     padding: 2em 3em;
     text-align: center;
-    color: rgb(51, 51, 51);
-    background-color: lightgray;
+    color: #333333;
+    background-color: #d3d3d3;
 }
