@@ -1,14 +1,13 @@
-let startingNumber = 13;
 let COLS = 3;
-let ROWS = 3;
+let ROWS = 6;
 
-addRows(startingNumber, COLS, ROWS);
+addRows(COLS, ROWS);
 let numberOfFields = countFields();
 console.log(numberOfFields);
 assignAlerts();
 
-function addRows(textForID, fieldsQuantity, rowsQuantity) {
-    counter = textForID;
+function addRows(fieldsQuantity, rowsQuantity) {
+    counter = 1;
     for (let i = 0; i < rowsQuantity; i++) {
         let row = document.createElement("DIV");
         row.setAttribute('class','row');
