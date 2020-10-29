@@ -1,23 +1,32 @@
+let startingNumber = 13;
+let COLS = 3;
+let ROWS = 3;
 
-addField();
+addRows(startingNumber, COLS, ROWS);
 let numberOfFields = countFields();
 console.log(numberOfFields);
 assignAlerts();
 
-function addField() {
-    let row = document.createElement("DIV");
-    row.setAttribute('class','row');
+function addRows(textForID, fieldsQuantity, rowsQuantity) {
+    counter = textForID;
+    for (let i = 0; i < rowsQuantity; i++) {
+        let row = document.createElement("DIV");
+        row.setAttribute('class','row');
 
-    let field = document.createElement("DIV");
-    field.setAttribute('class','field');
-    field.setAttribute('id', '13');
+        for (let j = 0; j < fieldsQuantity; j++) {
+            let field = document.createElement("DIV");
+            field.setAttribute('class','field');
+            field.setAttribute('id', counter);
 
-    let textNode = document.createTextNode("One");
+            let textNode = document.createTextNode(counter);
     
-    field.appendChild(textNode);
-    row.appendChild(field);
+            field.appendChild(textNode);
+            row.appendChild(field);
 
-    document.getElementById("main").appendChild(row);
+            counter++;
+        }
+        document.getElementById("main").appendChild(row);
+    }
 }
 
 function countFields() {
@@ -25,7 +34,7 @@ function countFields() {
 }
 
 function assignAlerts() {
-    for (let number = 1; number < numberOfFields+1; number++) {
+    for (let number = 1; number <= numberOfFields; number++) {
         document.getElementById(number).onclick = function() {myAlert(number)};
     }
     
