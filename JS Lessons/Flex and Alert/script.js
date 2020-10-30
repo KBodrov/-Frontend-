@@ -1,10 +1,11 @@
 let COLS = 3;
-let ROWS = 6;
+let ROWS = 3;
 
 addRows(COLS, ROWS);
 let numberOfFields = countFields();
 //console.log(numberOfFields);
-assignAlerts();
+clickHandler();
+
 
 function addRows(fieldsQuantity, rowsQuantity) {
     counter = 1;
@@ -32,11 +33,23 @@ function countFields() {
     return document.getElementsByClassName("field").length;
 }
 
-function assignAlerts() {
-    main.addEventListener("click", alertHandler);
+function assignEvents() {
+    
 }
 
-function alertHandler(event) {
+function clickHandler(event) {
+    main.addEventListener("click", openOverlay);
+    closebtn.addEventListener("click", closeOverlay);
+    resetbtn.addEventListener("click", closeOverlay);
     //console.log(event.target.id);
-    alert(event.target.id);
+    //alert(event.target.id);
+}
+
+function openOverlay() {
+    document.getElementById("overlay-background").style.height = "100%";
+}
+
+function closeOverlay() {
+    document.getElementById("overlay-background").style.height = "0%";
+    //alert(this.innerHTML);
 }

@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -14,17 +15,125 @@ body {
 }
 
 .row {
-    max-width: 600px;
     margin: 0 auto 0.2em auto;
+    max-width: 600px;
     display: flex;
     justify-content: center;
 }
 
 .field {
-    background-color: #d3d3d3;
-    padding: 3em 0 3em 0;
     margin: 0 0.1em;
+    padding: 3em 0 3em 0;
+    background-color: #d3d3d3;
     box-sizing: border-box;
     flex-basis: 30%;
     text-align: center;
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: rgba(100, 100, 100, 0.5);
+    overflow-y: hidden;
+    transition: 0.5s;
+    transition-property: height;
+    align-items: center;
+    display: flex;
+}
+
+.overlay-header {
+    border-style: solid;
+    border-radius: 1em;
+    border-color: #707070;
+    border-width: 0.05em;
+    margin-bottom: 1em;
+    background-color: #0316bd;
+}
+
+.overlay-header h3 {
+    color: #ffffff;
+    flex: 1;
+    margin: auto;
+}
+
+.overlay-header a {
+    font-size: 3em;
+    text-decoration: none;
+    font-size: 2em;
+    color: #ffffff;
+    transition: 0.25s;
+    transition-property: color;
+}
+
+.overlay-header a:hover, 
+.overlay-header a:focus {
+    color: #bbbbbb;
+}
+
+.overlay-content {
+    margin: auto;
+    border-style: solid;
+    border-radius: 1em;
+    border-color: #707070;
+    border-width: 0.05em;
+    width: 400px;
+    font-size: 0.8em;
+    background-color: #ffffff;
+}
+
+.form-row {
+    padding: 0.5em 2em;
+    display: flex;
+}
+
+.form-row label{
+    padding-right: 0.5em;
+}
+
+.form-row select,
+.form-row textarea,
+.form-row input {
+    flex: 1;
+    border-width: 0.05em;
+    border-radius: 0.5em;
+}
+
+select {
+    text-align: center;
+    text-align-last: center;
+}
+
+input[type="time"] {
+    text-align: center;
+}
+
+.form-row input[type="submit"],
+.form-row input[type="reset"] {
+    margin-bottom: 0.5em;
+    border-style: solid;
+    border-width: 0.05em;
+    border-radius: 0.5em;
+    height: 3em;
+}
+
+.form-row input[type="submit"] {
+    margin-right: 0.5em;
+    flex-basis: 80%;
+    background-color: #31fd31;
+}
+
+.form-row input[type="reset"] {
+    background-color: #f13b3b;
+}
+
+.labelForTextarea {
+    padding-bottom: 0;
+}
+
+.underLabel {
+    padding-top: 0;
 }
