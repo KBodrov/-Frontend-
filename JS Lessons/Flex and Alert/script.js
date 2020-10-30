@@ -33,12 +33,15 @@ function countFields() {
 }
 
 function assignAlerts() {
+    main.addEventListener("click", alertHandler);
+}
+
+function alertHandler() {
     for (let number = 1; number <= numberOfFields; number++) {
         document.getElementById(number).onclick = function() {myAlert(number)};
     }
-    
 }
 
-function myAlert(string) {
-    alert(string);
+function myAlert(message) {
+    alert(message);
 }
