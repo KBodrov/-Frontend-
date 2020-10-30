@@ -3,7 +3,7 @@ let ROWS = 6;
 
 addRows(COLS, ROWS);
 let numberOfFields = countFields();
-console.log(numberOfFields);
+//console.log(numberOfFields);
 assignAlerts();
 
 function addRows(fieldsQuantity, rowsQuantity) {
@@ -36,12 +36,7 @@ function assignAlerts() {
     main.addEventListener("click", alertHandler);
 }
 
-function alertHandler() {
-    for (let number = 1; number <= numberOfFields; number++) {
-        document.getElementById(number).onclick = function() {myAlert(number)};
-    }
-}
-
-function myAlert(message) {
-    alert(message);
+function alertHandler(event) {
+    //console.log(event.target.id);
+    alert(event.target.id);
 }
