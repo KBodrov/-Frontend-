@@ -1,2 +1,5 @@
-"use strict"; //Используем только современные возможности JavaScript
-alert("Привет, мир!");
+const menuBtn = document.getElementById("sidebar_btn");
+
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("fa-chevron-right");
+});
