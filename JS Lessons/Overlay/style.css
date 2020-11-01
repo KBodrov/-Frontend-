@@ -161,6 +161,7 @@ input[type="time"] {
 .organizer i {
     position: absolute;
     padding: 0.5em 0.5em 0.5em 0.65em;
+    text-shadow: 0 0 0.4em #5c5c5c;
 }
 
 .submit-btn {
@@ -180,5 +181,5 @@ input[type="time"] {
     border-radius: var(--overlay-element-border-radius);
     color: #ffffff;
     background-color: #00bcd5;
-    text-shadow: var(--overlay-text-shadow);
+    
 }
