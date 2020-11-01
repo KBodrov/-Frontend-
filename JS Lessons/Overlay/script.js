@@ -40,7 +40,6 @@ function assignEvents() {
 function clickHandler(event) {
     main.addEventListener("click", openOverlay);
     closebtn.addEventListener("click", closeOverlay);
-    resetbtn.addEventListener("click", closeOverlay);
     //console.log(event.target.id);
     //alert(event.target.id);
 }

@@ -4,6 +4,9 @@ body {
     padding: 0;
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --overlay-element-border-radius: 0.3em;
+    --overlay-text-shadow: 0.05em 0 0.1em #5c5c5c;
+    --overlay-box-shadow: 0 0 0.5em 0 #858585;
 }
 
 body {
@@ -45,17 +48,18 @@ body {
     display: flex;
 }
 
-.overlay-header {
-    border-style: solid;
-    border-radius: 1em;
-    border-color: #707070;
-    border-width: 0.05em;
-    margin-bottom: 1em;
-    background-color: #0316bd;
+.form-header {
+    padding: 0.5em 1em;
+    display: flex;
 }
 
-.overlay-header h3 {
-    color: #ffffff;
+.overlay-header {
+    margin-bottom: 2.5em;
+    background-color: #e0e0e0;
+}
+
+.overlay-header h4 {
+    color: #3e3e3e;
     flex: 1;
     margin: auto;
 }
@@ -64,76 +68,117 @@ body {
     font-size: 3em;
     text-decoration: none;
     font-size: 2em;
-    color: #ffffff;
+    color: #909090;
     transition: 0.25s;
     transition-property: color;
 }
 
 .overlay-header a:hover, 
 .overlay-header a:focus {
-    color: #bbbbbb;
+    color: #3e3e3e;
 }
 
 .overlay-content {
     margin: auto;
-    border-style: solid;
-    border-radius: 1em;
-    border-color: #707070;
-    border-width: 0.05em;
     width: 400px;
     font-size: 0.8em;
-    background-color: #ffffff;
+    background-color: #eeeeee;
 }
 
 .form-row {
-    padding: 0.5em 2em;
+    padding: 0.5em 3em;
     display: flex;
-}
-
-.form-row label{
-    padding-right: 0.5em;
 }
 
 .form-row select,
 .form-row textarea,
 .form-row input {
-    flex: 1;
     border-width: 0.05em;
-    border-radius: 0.5em;
+    border-radius: var(--overlay-element-border-radius);
+    border-color: #cbcbcb;
+    box-shadow: var(--overlay-box-shadow);
+    text-shadow: var(--overlay-text-shadow);
+    flex: 1;
 }
 
 select {
-    text-align: center;
-    text-align-last: center;
+    padding: 0.5em;
+    background-color: #cccccc;
+    font-weight: 700;
+}
+
+.time-wrap {
+    padding: 0.5em 3em;
+    padding-bottom: 0.7em;
+    display: flex;
+}
+
+.input-label {   
+    margin-top: 0.5em;
+    padding-bottom: 0.2em;
+    text-shadow: var(--overlay-text-shadow);
+}
+
+.time-wrap h4 {
+    margin: 0;
+    padding: 0.5em 1em;
+    text-shadow: var(--overlay-text-shadow);
 }
 
 input[type="time"] {
-    text-align: center;
-}
-
-.form-row input[type="submit"],
-.form-row input[type="reset"] {
-    margin-bottom: 0.5em;
-    border-style: solid;
     border-width: 0.05em;
-    border-radius: 0.5em;
-    height: 3em;
+    border-radius: var(--overlay-element-border-radius);
+    border-color: #cbcbcb;
+    box-shadow: var(--overlay-box-shadow);
+    text-shadow: var(--overlay-text-shadow);
+    padding: 0.5em;
 }
 
-.form-row input[type="submit"] {
-    margin-right: 0.5em;
-    flex-basis: 80%;
-    background-color: #31fd31;
+.textareaContainer {
+    border-width: 0.05em;
+    border-radius: var(--overlay-element-border-radius);
+    border-color: #cbcbcb;
+    box-shadow: var(--overlay-box-shadow);
+    height: 5em;
+    flex: 1;
+    display: flex;
+    padding-left: 0.5em;
+    background-color: #ffffff;
+    text-shadow: var(--overlay-text-shadow);    
 }
 
-.form-row input[type="reset"] {
-    background-color: #f13b3b;
+.textarea {
+    flex: 1;
+    margin: auto;
+    
 }
 
-.labelForTextarea {
-    padding-bottom: 0;
+.organizer select {
+    padding-left: 2em;
+    background-color: #ffffff;
 }
 
-.underLabel {
-    padding-top: 0;
+.organizer i {
+    position: absolute;
+    padding: 0.5em 0.5em 0.5em 0.65em;
+}
+
+.submit-btn {
+    padding: 0.5em 3em;
+    float: right;
+}
+
+.submit-btn input[type="submit"] {
+    margin-top: 4em;
+    margin-bottom: 3em;
+    border-width: 0.05em;
+    border-radius: var(--overlay-element-border-radius);
+    border-color: #1db1bf;
+    box-shadow: var(--overlay-box-shadow);
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: var(--overlay-element-border-radius);
+    color: #ffffff;
+    background-color: #00bcd5;
+    text-shadow: var(--overlay-text-shadow);
 }
