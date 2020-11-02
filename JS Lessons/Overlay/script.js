@@ -1,10 +1,38 @@
 let COLS = 3;
 let ROWS = 3;
 
+let jsonString = `{ 
+    "id": [1, 2],
+    "location": [   
+        "ОЛИМП, Кронверкский пр.49",
+        "СНЛО, пер. Гривцова 14"
+    ],
+    "place": [
+        {"auditoria": [
+            "Коворкинг (ауд.511)",
+            "Лекционная (ауд.501)",
+            "Мастерская (ауд.512)"
+            ]
+        },
+        {"auditoria": [
+            "Основная (ауд. 413)",
+            "Новая (ауд.316)"
+            ]
+        }
+    ]
+}`;
+
 addRows(COLS, ROWS);
 let numberOfFields = countFields();
 //console.log(numberOfFields);
 clickHandler();
+
+let data = JSON.parse(jsonString);
+
+
+
+
+
 
 
 function addRows(fieldsQuantity, rowsQuantity) {
