@@ -148,6 +148,7 @@ label #sidebar_btn:hover{
     display: none;
 }
 
+/* ~ between selectors means: all children elements of ... */
 #check:checked ~ .sidebar a{
     font-size: 20px;
     margin-left: 170px;
