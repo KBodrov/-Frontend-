@@ -21,5 +21,7 @@ let slaveSelect = document.getElementById("choices");
 mainSelect.addEventListener('change', function (e) {
     if (e.target.value !== "placeholder") {
         alert(e.target.value);
+        slaveSelect.disabled = false;
     }
+    else slaveSelect.disabled = true;
 });
