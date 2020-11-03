@@ -103,10 +103,6 @@ function countFields() {
     return document.getElementsByClassName("field").length;
 }
 
-function assignEvents() {
-    
-}
-
 function clickHandler(event) {
     main.addEventListener("click", openOverlay);
     closebtn.addEventListener("click", closeOverlay);
