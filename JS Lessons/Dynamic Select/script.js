@@ -20,8 +20,28 @@ let slaveSelect = document.getElementById("choices");
 
 mainSelect.addEventListener('change', function (e) {
     if (e.target.value !== "placeholder") {
-        alert(e.target.value);
+        // alert(e.target.value);
         slaveSelect.disabled = false;
+
+        let text = "";
+
+        switch (e.target.value) {
+            case "js":
+                text = "js!";
+                break;
+            case "php":
+                text = "php!";
+                break;
+            case "tuts":
+                text = "tuts!";
+                break;
+            default:
+                text = "Error, Sir!";
+        }
+
+        alert(text);
+
     }
     else slaveSelect.disabled = true;
 });
+
