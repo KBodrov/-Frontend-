@@ -9,8 +9,8 @@ let dataList = {
             value: ['random', ' form', 'table', 'order']
         },
         tuts: {
-            text: ['Iframes', 'PHP to JS', 'Object Literals', 'Initializing JS']
-            //example without values
+            text: ['Iframes', 'PHP to JS', 'Object Literals', 'Initializing JS'],
+            value: ['frames', 'ptoj', 'literals', 'init']
         }
     }
 };
@@ -19,29 +19,48 @@ let mainSelect = document.getElementById("category");
 let slaveSelect = document.getElementById("choices");
 
 mainSelect.addEventListener('change', function (e) {
-    if (e.target.value !== "placeholder") {
+    if (e.target.value !== "") {
         // alert(e.target.value);
         slaveSelect.disabled = false;
 
-        let text = "";
-
         switch (e.target.value) {
             case "js":
-                text = "js!";
+                clearSelect(slaveSelect);
+                populateSelect(dataList.choices.js);
                 break;
             case "php":
-                text = "php!";
+                clearSelect(slaveSelect);
+                populateSelect(dataList.choices.php);
                 break;
             case "tuts":
-                text = "tuts!";
+                clearSelect(slaveSelect);
+                populateSelect(dataList.choices.tuts);
                 break;
             default:
                 text = "Error, Sir!";
         }
-
-        alert(text);
-
     }
     else slaveSelect.disabled = true;
 });
 
+function populateSelect(target) {
+    for (let i = 0; i < target.text.length; i++){
+        let option = document.createElement("option");
+        option.value = target.value[i];
+        option.text = target.text[i];
+        slaveSelect.appendChild(option);
+    }
+}
+
+function clearSelect(target) {
+    while (target.firstChild) {
+        target.removeChild(target.lastChild);
+    };
+    let option = document.createElement("option");
+    option.value = "placeholder";
+    option.text = "Make your choice, please!";
+    option.disabled = true;
+    option.selected = true;
+    option.hidden = true;
+    slaveSelect.appendChild(option);
+}
