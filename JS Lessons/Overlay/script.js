@@ -110,8 +110,10 @@ function clickHandler(event) {
     //alert(event.target.id);
 }
 
-function openOverlay() {
-    document.getElementById("overlay-background").style.height = "100%";
+function openOverlay(event) {
+    if (event.target.id !== "main") {
+        document.getElementById("overlay-background").style.height = "100%";
+    }
 }
 
 function closeOverlay() {
