@@ -6,6 +6,7 @@
     <title>Overlay</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     
@@ -28,12 +29,9 @@
             </div>
 
             <div class="form-row">
-                <select name="room" id="room">
+                <select name="room" id="room" disabled>
                     <option value="" disabled selected hidden>Аудитория</option>
-                    <option value="511">Коворкинг (ауд. 511)</option>
-                    <option value="501">Лекционная (ауд. 501)</option>
-                    <option value="512">Мастерская (ауд. 512)</option>
-                    <option value="501а">Переговорная (ауд. 501а)</option>
+                    <!-- Populated with JavaScript -->
                 </select>
             </div>
             
@@ -88,7 +86,6 @@
     <div class="container" id="main"></div>
     <!--Main section end-->
 
-    <script src="script.js"></script>
 </body>
 </html>
 

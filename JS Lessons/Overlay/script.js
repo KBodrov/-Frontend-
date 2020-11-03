@@ -1,6 +1,3 @@
-let COLS = 3;
-let ROWS = 3;
-
 let jsonString = `{ 
     "id": [1, 2],
     "location": [   
@@ -22,18 +19,63 @@ let jsonString = `{
     ]
 }`;
 
+let data = JSON.parse(jsonString);
+
+let mainSelect = document.getElementById("place");
+let slaveSelect = document.getElementById("room");
+
+mainSelect.addEventListener('change', function (e) {
+    if (e.target.value !== "") {
+        // alert(e.target.value);
+        slaveSelect.disabled = false;
+
+        switch (e.target.value) {
+            case "OLIMP":
+                clearSelect(slaveSelect);
+                populateSelect(data.place[0].auditoria);
+                break;
+            case "SNLO":
+                clearSelect(slaveSelect);
+                populateSelect(data.place[1].auditoria);
+                break;
+            default:
+                text = "Error, Sir!";
+        }
+    }
+    else slaveSelect.disabled = true;
+});
+
+function populateSelect(target) {
+    for (let i = 0; i < target.length; i++){
+        let option = document.createElement("option");
+        option.value = target[i];
+        option.text = target[i];
+        slaveSelect.appendChild(option);
+    }
+}
+
+function clearSelect(target) {
+    while (target.firstChild) {
+        target.removeChild(target.lastChild);
+    };
+    let option = document.createElement("option");
+    option.value = "placeholder";
+    option.text = "Аудитория";
+    option.disabled = true;
+    option.selected = true;
+    option.hidden = true;
+    slaveSelect.appendChild(option);
+}
+
+
+
+let COLS = 3;
+let ROWS = 3;
+
 addRows(COLS, ROWS);
 let numberOfFields = countFields();
 //console.log(numberOfFields);
 clickHandler();
-
-let data = JSON.parse(jsonString);
-
-
-
-
-
-
 
 function addRows(fieldsQuantity, rowsQuantity) {
     counter = 1;
