@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Select wJS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!-- Tutorial link: https://www.dyn-web.com/tutorials/forms/select/paired.php -->
+</head>
+<body>
+    <select name="category" id="category">
+        <option value="placeholder">Choose one</option>
+        <option value="js">JavaScript</option>
+        <option value="php">PHP Scripts</option>
+        <option value="tuts">Tutorials</option>
+    </select>
+
+    <select name="choices" id="choices" disabled>
+        <option value="" disabled selected hidden>Choices</option>
+        <!-- populated using JavaScript -->
+    </select>
+</body>
+</html>
