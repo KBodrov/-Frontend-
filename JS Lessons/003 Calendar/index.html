@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title>Overlay</title>
+    <title>Calendar</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="script.js" defer></script>
@@ -53,11 +53,7 @@
                 <h4>&ndash;</h4>
                 <input type="time" name="endingTime" id="endingTime">
             </div>
-            <!--
-            <div class="form-row input-label">
-                <label for="actvityName">Название мероприятия</label>
-            </div>
-            -->
+
             <div class="form-row">
                 <div class="textareaContainer">
                     <div class="textarea" contenteditable="true">Название мероприятия</div>
@@ -83,28 +79,10 @@
     <!--Overlay section end-->
 
     <!--Main section start-->
-    <div class="container" id="main"></div>
+    <div class="container" id="main">
+        <div class="row">Ноябрь</div>
+    </div>
     <!--Main section end-->
 
 </body>
 </html>
-
-<!--
-    <div id="overlay-content">
-        <header class="overlay-header"><h4>Создать событие</h4>
-            <div class="overlay-close" id="overlay-close"><i class="fas fa-times"></i></div>
-        </header>
-        <label for="place">Выберите площадку:</label>
-        <select name="place" id="place">
-            <option value="OLIMP">ОЛИМП, Кронверкский пр.49а</option>
-            <option value="SNLO">СНЛО, пер. Гривцова 14</option>
-        </select>
-        <label for="room">Выберите аудиторию:</label>
-        <select name="room" id="room">
-            <option value="511">Коворкинг (ауд. 511)</option>
-            <option value="501">Лекционная (ауд. 501)</option>
-            <option value="512">Мастерская (ауд. 512)</option>
-            <option value="501а">Переговорная (ауд. 501а)</option>
-        </select>
-    </div>
--->

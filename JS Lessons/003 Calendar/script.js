@@ -70,8 +70,8 @@ function clearSelect(target) {
 
 
 
-let COLS = 3;
-let ROWS = 3;
+let COLS = 7;
+let ROWS = 7;
 
 addRows(COLS, ROWS);
 let numberOfFields = countFields();
@@ -112,8 +112,9 @@ function clickHandler(event) {
 }
 
 function openOverlay(event) {
-    if (event.target.id !== "main") {
+    if (event.target.id !== ("main" && "")) {
         document.getElementById("overlay-background").style.height = "100%";
+        //alert(event.target.id);
     }
 }
 

@@ -24,9 +24,13 @@ body {
     justify-content: center;
 }
 
+.row:first-child {
+    background-color: red;
+}
+
 .field {
     margin: 0 0.1em;
-    padding: 3em 0 3em 0;
+    padding: 1em 0;
     background-color: #d3d3d3;
     box-sizing: border-box;
     flex-basis: 30%;
