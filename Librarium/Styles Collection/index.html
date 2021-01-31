@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sidebar Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+
+        <input type="checkbox" id="check">
+        
+        <!--Header section start-->
+        <header>
+
+            <div class="left-area">
+                <h3>OLIMP Union</h3>
+            </div>
+
+            <div class="search_bar">
+                <input type="text" placeholder="Поиск...">
+                <i class="fas fa-search"></i>
+            </div>
+            
+            <div class="right-area">
+                <a href="#" class="logout_btn">Logout</a>
+            </div>
+        </header>
+        <!--Header section end-->
+
+        <!--Sidebar section start-->
+        <div class="sidebar">
+
+            <label for="check">
+                <i class="fas fa-chevron-left" id="sidebar_btn"></i>
+            </label>
+            
+            <center>
+                <img src="UserAvatar.jpg" class="profile_image" alt="">
+                <h4>KBodrov</h4>
+            </center>
+
+            
+
+            <a href="#"><i class="fas fa-desktop"></i>        <span>Портфолио</span></a>
+            <a href="#"><i class="fas fa-cogs"></i>           <span>Проекты</span></a>
+            <a href="#"><i class="fas fa-table"></i>          <span>Закупки</span></a>
+            <a href="#"><i class="fas fa-th"></i>             <span>Журнал</span></a>
+            <a href="#"><i class="fas fa-info-circle"></i>    <span>Расписание</span></a>
+            <a href="#"><i class="far fa-file-alt"></i>       <span>Документация</span></a>
+            <a href="#"><i class="fas fa-sliders-h"></i>      <span>Настройки</span></a>
+            
+        </div>
+        <!--Sidebar section end-->
+
+        <div class="content"></div>
+
+    </body>
+</html>
