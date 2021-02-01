@@ -155,7 +155,7 @@ label #sidebar_btn:hover{
     width: 80px;
 }
 
-.main-content{
+.content{
     margin-left: 250px;
     background: url(Background.jpg) no-repeat;
     background-position: center;

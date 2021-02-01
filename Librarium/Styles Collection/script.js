@@ -14,7 +14,7 @@ function clickHandler(event) {
     }
 }
 
-const mainContent = document.getElementById("main-content");
+const mainContent = document.getElementById("content");
 
 function returnHTML(file_id) {
     axios.get(file_id)
