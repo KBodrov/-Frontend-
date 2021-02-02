@@ -1,0 +1,10 @@
+label {
+    display: block;
+    background: lightgrey;
+    width: 100px;
+    height: 100px;
+}
+
+#demo:checked ~ .test {
+    display: none;
+}
