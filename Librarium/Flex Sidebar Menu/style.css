@@ -28,6 +28,7 @@ header {
 .header_company_name {
     margin: auto 0;
     width: 15rem;
+    color: white;
 }
 
 .header_empty_space {
@@ -116,10 +117,6 @@ main {
     border-radius: 2rem;
 }
 
-#check{
-    display: none;
-}
-
 .sidebar_btn {
     background: lightcoral;
     width: 2rem;
@@ -163,7 +160,16 @@ main {
     font-size: 1.5rem;
 }
 
-#check:checked ~ .sidebar div a span{
+#check:checked ~ .sidebar .sidebar_row .sidebar_searchbox,
+#check:checked ~ .sidebar .sidebar_row a span {
+    display: none;
+}
+
+#check:checked ~ .sidebar {
+    width: 2rem;
+}
+
+#check {
     display: none;
 }
 
