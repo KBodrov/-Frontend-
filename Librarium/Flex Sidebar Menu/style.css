@@ -60,12 +60,17 @@ main {
     width: 15rem;
     display: flex;
     flex-direction: column;
+    transition: 0.5s;
+    transition-property: width;
 }
 
 .sidebar_row {
     height: 2rem;
     display: flex;
     flex-direction: row;
+}
+
+.sidebar_row:first-child {
     justify-content: flex-end;
 }
 
@@ -131,6 +136,35 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sidebar div {
+    background: orange;
+}
+
+.sidebar div a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: yellow;
+    flex-grow: 1;
+}
+
+.sidebar div a i {
+    width: 2rem;
+    background: red;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.sidebar div a span {
+    background: pink;
+    font-size: 1.5rem;
+}
+
+#check:checked ~ .sidebar div a span{
+    display: none;
 }
 
 /*ARTICLE section*/
