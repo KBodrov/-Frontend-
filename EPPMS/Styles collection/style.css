@@ -25,17 +25,17 @@ header {
     height: 3rem;
 }
 
-.header_company_name {
+.header-company-name {
     margin: auto 0;
     width: 15rem;
     color: white;
 }
 
-.header_empty_space {
+.header-empty-space {
     margin: auto;
 }
 
-.header_profile_image{
+.header-profile-image{
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 2.5rem;
@@ -65,17 +65,17 @@ main {
     transition-property: width;
 }
 
-.sidebar_row {
+.sidebar-row {
     height: 2rem;
     display: flex;
     flex-direction: row;
 }
 
-.sidebar_row:first-child {
+.sidebar-row:first-child {
     justify-content: flex-end;
 }
 
-.sidebar_searchbox {
+.sidebar-searchbox {
     flex-grow: 1;
     display: flex;
     justify-content: center;
@@ -84,7 +84,7 @@ main {
     padding: 0.1rem;
 }
 
-.sidebar_searchbox input {
+.sidebar-searchbox input {
     background: white;
     border: none;
     outline: none;
@@ -96,18 +96,18 @@ main {
     padding-right: 1rem;
 }
 
-.sidebar_searchbox:hover input {
+.sidebar-searchbox:hover input {
     width: 100%;
     padding: 0 0.5rem;
 }
 
-.sidebar_searchbox input:focus {
+.sidebar-searchbox input:focus {
     width: 100%;
     padding: 0 0.5rem;
     padding-right: 1.25rem;
 }
 
-.search_btn {
+.search-btn {
     background: lightgreen;
     border: none;
     outline: none;
@@ -117,12 +117,12 @@ main {
     border-radius: 2rem;
 }
 
-.sidebar_btn {
+.sidebar-btn {
     background: lightcoral;
     width: 2rem;
 }
 
-.hide_sidebar_btn {
+.hide-sidebar-btn {
     border: none;
     outline: none;
     cursor: pointer;
@@ -135,6 +135,8 @@ main {
     align-items: center;
 }
 
+
+
 .sidebar div {
     background: orange;
 }
@@ -143,6 +145,7 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    text-decoration: none;
     background: yellow;
     flex-grow: 1;
 }
@@ -160,8 +163,8 @@ main {
     font-size: 1.5rem;
 }
 
-#check:checked ~ .sidebar .sidebar_row .sidebar_searchbox,
-#check:checked ~ .sidebar .sidebar_row a span {
+#check:checked ~ .sidebar .sidebar-row .sidebar-searchbox,
+#check:checked ~ .sidebar .sidebar-row a span {
     display: none;
 }
 
@@ -177,4 +180,7 @@ main {
 article {
     background: red;
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

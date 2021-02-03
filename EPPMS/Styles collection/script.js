@@ -1,5 +1,5 @@
-const hideSidebarBtn = document.getElementById("hide_sidebar_btn");
-const menuArrow = document.getElementById("sidebar_btn");
+const hideSidebarBtn = document.getElementById("hide-sidebar-btn");
+const menuArrow = document.getElementById("sidebar-btn");
 
 hideSidebarBtn.addEventListener("click", () => {
     menuArrow.classList.toggle("fa-chevron-right");
@@ -8,3 +8,27 @@ hideSidebarBtn.addEventListener("click", () => {
 
 
 
+const menuSidebar = document.getElementById("sidebar");
+menuSidebar.addEventListener("click", clickHandler);
+
+function clickHandler(event) {
+    if (event.target.hasAttribute("role")) { 
+        //console.log(event.target.getAttribute("role"));
+        returnHTML("./pages/" + event.target.getAttribute("role"));
+    }
+}
+
+const mainContent = document.getElementById("main-content");
+
+function returnHTML(file_id) {
+    axios.get(file_id)
+    .then(function (response) {
+    
+    mainContent.innerHTML = response.data;
+    
+    console.log(response.data);
+    })
+    .catch(function (error) {
+    console.log(error);
+    });
+}
