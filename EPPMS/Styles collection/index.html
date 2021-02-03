@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flex Sidebar</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>        
+        <header>
+            <div class="header_company_name">Flex Sidebar Menu</div>
+            <div class="header_empty_space"></div>
+            <img src="UserAvatar.jpg" class="header_profile_image" alt="">
+        </header>
+
+        <main>
+            <input type="checkbox" id="check">
+            <aside class="sidebar">
+                <div class="sidebar_row">
+                    <form action="" method="" class="sidebar_searchbox">
+                        <input type="text" name="" id="" placeholder="Search">
+                        <button class="search_btn" type="button" name="search_button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <div class="sidebar_btn">
+                        <label class="hide_sidebar_btn" for="check" id="hide_sidebar_btn">
+                            <i class="fas fa-chevron-left" id="sidebar_btn"></i>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="sidebar_row">
+                    <a href="#">
+                        <i class="fas fa-desktop"></i>        
+                        <span>Портфолио</span>
+                    </a>
+                </div>
+                <div class="sidebar_row">
+                    <a href="#">
+                        <i class="fas fa-cogs"></i>        
+                        <span>Проекты</span>
+                    </a>
+                </div>
+                <div class="sidebar_row">
+                    <a href="#">
+                        <i class="fas fa-table"></i>        
+                        <span>Закупки</span>
+                    </a>
+                </div>
+
+
+            </aside>
+
+            <article>Article</article>
+
+        </main>
+    </body>
+</html>
