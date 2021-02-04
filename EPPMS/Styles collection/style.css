@@ -288,3 +288,15 @@ article {
 /*                                                     */
 /*                                                     */
 /*=====================================================*/
+.normal-btn {
+    font-size: 1 rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    width: 10rem;
+    height: 2.5rem;
+    color: #3914AF;
+    border-color: #3914AF;
+    border-width: 1px;
+    border-radius: 0.5rem;
+    outline: none;
+}
