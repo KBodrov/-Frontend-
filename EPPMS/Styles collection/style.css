@@ -193,18 +193,22 @@ main {
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
-    color: rgb(61, 61, 61);
+    color: rgb(60, 60, 60);
 }
 
 .sidebar div a span {
     /* background: pink; */
     font-size: 1.5rem;
     padding-left: 1rem;
-    color: rgb(61, 61, 61);
+    color: rgb(60, 60, 60);
+}
+
+.sidebar div a:hover i {
+    color: rgb(120, 120, 120);
 }
 
 .sidebar div a:hover {
-    background: rgb(240, 240, 240);
+    background: rgb(240, 240, 240);    
 }
 
 #check:checked ~ .sidebar .sidebar-row .sidebar-searchbox,
@@ -214,6 +218,10 @@ main {
 
 #check:checked ~ .sidebar {
     width: 2rem;
+}
+
+#check:checked ~ .sidebar div a:hover {
+    background: white;
 }
 
 #check {
