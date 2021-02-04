@@ -16,7 +16,13 @@ html, body {
 
 
 
-/*HEADER section*/
+/*=====================================================*/
+/*                                                     */
+/*                                                     */
+/*                  HEADER section                     */
+/*                                                     */
+/*                                                     */
+/*=====================================================*/
 header {
     background: blue;
     text-align: center;
@@ -46,7 +52,14 @@ header {
 
 
 
-/*MAIN section*/
+
+/*=====================================================*/
+/*                                                     */
+/*                                                     */
+/*                    MAIN section                     */
+/*                                                     */
+/*                                                     */
+/*=====================================================*/
 main {
     display: flex;
     flex-direction: row;
@@ -55,9 +68,13 @@ main {
 }
 
 
-/*SIDEBAR section*/
+/*===============================================*/
+/*                                               */
+/*                  SIDEBAR section              */
+/*                                               */
+/*===============================================*/
 .sidebar { 
-    background: green;
+    background: white;
     width: 15rem;
     display: flex;
     flex-direction: column;
@@ -71,8 +88,14 @@ main {
     flex-direction: row;
 }
 
+/*===============================================*/
+/*               SIDEBAR first row               */
+/*===============================================*/
 .sidebar-row:first-child {
     justify-content: flex-end;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .sidebar-searchbox {
@@ -85,7 +108,7 @@ main {
 }
 
 .sidebar-searchbox input {
-    background: white;
+    background: rgb(143, 201, 255);
     border: none;
     outline: none;
     line-height: 1.95rem;
@@ -108,17 +131,19 @@ main {
 }
 
 .search-btn {
-    background: lightgreen;
-    border: none;
+    background: white;
+    border-color: blue;
+    border-width: 1.5px;
     outline: none;
     cursor: pointer;
     min-width: 2rem;
     font-size: 1.7rem;
     border-radius: 2rem;
+    color: blue;
 }
 
 .sidebar-btn {
-    background: lightcoral;
+    /* background: lightcoral; */
     width: 2rem;
 }
 
@@ -126,19 +151,21 @@ main {
     border: none;
     outline: none;
     cursor: pointer;
-    background: pink;
+    /* background: pink; */
     font-size: 1.5rem;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(185, 0, 185);
 }
 
-
-
+/*===============================================*/
+/*               SIDEBAR other rows              */
+/*===============================================*/
 .sidebar div {
-    background: orange;
+    /* background: orange; */
 }
 
 .sidebar div a {
@@ -146,21 +173,28 @@ main {
     justify-content: flex-start;
     align-items: center;
     text-decoration: none;
-    background: yellow;
+    /* background: yellow; */
     flex-grow: 1;
 }
 
 .sidebar div a i {
     width: 2rem;
-    background: red;
+    /* background: red; */
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
+    color: rgb(61, 61, 61);
 }
 
 .sidebar div a span {
-    background: pink;
+    /* background: pink; */
     font-size: 1.5rem;
+    padding-left: 1rem;
+    color: rgb(61, 61, 61);
+}
+
+.sidebar div a:hover {
+    background: rgb(240, 240, 240);
 }
 
 #check:checked ~ .sidebar .sidebar-row .sidebar-searchbox,
@@ -176,11 +210,51 @@ main {
     display: none;
 }
 
-/*ARTICLE section*/
+
+
+
+
+/*=====================================================*/
+/*                                                     */
+/*                                                     */
+/*                  ARTICLE section                    */
+/*                                                     */
+/*                                                     */
+/*=====================================================*/
 article {
     background: red;
     flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+/*=====================================================*/
+/*                                                     */
+/*                                                     */
+/*             EXTERNAL FILES section                  */
+/*                                                     */
+/*                                                     */
+/*=====================================================*/
+.article-row,
+.item-container,
+.code-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-container {
+    background: pink;
+}
+
+.code-container {
+    background: violet;
 }
