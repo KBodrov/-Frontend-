@@ -26,9 +26,27 @@ function returnHTML(file_id) {
     
     mainContent.innerHTML = response.data;
     
-    console.log(response.data);
+    // console.log(response.data);
     })
     .catch(function (error) {
     console.log(error);
     });
+}
+
+function parseClasses()
+{
+    const itemsList = document.querySelectorAll(".item-container");
+    const codesList = document.querySelectorAll(".code-container");
+    for (i = 0; i < itemsList.length; i++)
+    {
+        codesList[i].innerHTML = '';
+        const listOfClasses = itemsList[i].childNodes[1].classList;
+        for (j = 0; j < listOfClasses.length; j++)
+        {
+            const textNode = document.createTextNode(listOfClasses[j]);
+            codesList[i].appendChild(textNode);
+            const brNode = document.createElement("br");
+            codesList[i].appendChild(brNode);
+        }
+    }
 }
