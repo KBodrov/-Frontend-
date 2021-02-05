@@ -26,6 +26,7 @@ function returnHTML(file_id) {
     
     mainContent.innerHTML = response.data;
     
+    parseClasses();
     // console.log(response.data);
     })
     .catch(function (error) {
