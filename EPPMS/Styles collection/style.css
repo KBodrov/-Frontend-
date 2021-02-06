@@ -321,26 +321,50 @@ article {
 /*                                                     */
 /*                                                     */
 /*=====================================================*/
+.btn {
+    border-width: 1px;
+    border-radius: 0.25rem;
+    outline: none;
+}
+
 .small-btn {
     font-size: 1 rem;
     line-height: 1.25rem;
     padding: 0.25rem 1.25rem;
-    border-width: 1px;
-    border-radius: 0.25rem;
-    outline: none;
-    color: #3914AF;
-    border-color: #6F47EB;
-    background-color: #FFFFFF;
 }
 
 .medium-btn {
     font-size: 1.25rem;
     line-height: 1.25rem;
     padding: 0.5rem 1.75rem;
-    border-width: 1px;
-    border-radius: 0.25rem;
-    outline: none;
+}
+
+.light-btn {
     color: #3914AF;
     border-color: #6F47EB;
     background-color: #FFFFFF;
+}
+
+.light-btn:hover {
+    background-color: #F0F0FF;
+}
+
+.light-btn:active {
+    border-color: #B9A5F5;
+    background-color: #F0F0FF;
+}
+
+.dark-btn {
+    color: #FFFFFF;
+    background-color: #3914AF;
+    border-color: #3914AF;
+}
+
+.dark-btn:hover {
+    background-color: #6F47EB;
+    border-color: #6F47EB;
+}
+
+.dark-btn:active {
+    background-color: #4F1EE5;
 }
