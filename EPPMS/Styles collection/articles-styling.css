@@ -1,0 +1,116 @@
+/*=====================================================*/
+/*                                                     */
+/*                                                     */
+/*                  ARTICLE section                    */
+/*                                                     */
+/*                                                     */
+/*=====================================================*/
+article {
+    /* background: red; */
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article-scrollable-container {
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    overflow-y: auto;
+    width: 100%;
+}
+
+
+
+
+
+/*=====================================================*/
+/*                                                     */
+/*                                                     */
+/*             EXTERNAL FILES section                  */
+/*                                                     */
+/*                                                     */
+/*=====================================================*/
+.article-section,
+.article-section-header,
+.article-section-row,
+.article-section-content,
+.content-row,
+.content-container {
+    width: 100%;
+    min-height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.article-section {
+    /* background: red; */
+    flex-direction: column;
+}
+
+.article-section-header {
+    background: green;
+    font-size: 1.5rem;
+    height: 3rem;
+    color: white;
+}
+
+.article-section-row {
+    /* background: green; */
+    align-items: stretch;
+}
+
+.article-section-vertical-line {
+    background: green;
+    width: 0.25rem;
+}
+
+.article-section-horizontal-line {
+    background: green;
+    height: 0.25rem;
+    width: 100%;
+}
+
+.article-section-content {
+    flex-direction: column;
+}
+
+.content-row {
+    /* background: red; */
+    min-height: 2rem;
+    align-items: stretch;
+}
+
+.content-horizontal-line {
+    background: lightgrey;
+    width: 100%;
+    min-height: 0.25rem;
+}
+
+.content-vertical-line {
+    background: lightgray;
+    min-width: 0.25rem;
+}
+
+/* .content-container {
+    background: yellow;
+} */
+
+.content-header {
+    background: rgb(173, 173, 173);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* .content-item {
+    background: blue;
+} */
+
+/* .content-code {
+    background:red;
+} */

@@ -36,8 +36,8 @@ function returnHTML(file_id) {
 
 function parseClasses()
 {
-    const itemsList = document.querySelectorAll(".item-container");
-    const codesList = document.querySelectorAll(".code-container");
+    const itemsList = document.querySelectorAll(".content-item");
+    const codesList = document.querySelectorAll(".content-code");
     for (i = 0; i < itemsList.length; i++)
     {
         codesList[i].innerHTML = '';
