@@ -53,9 +53,9 @@ article {
 }
 
 .article-section-header {
-    background: green;
-    font-size: 1.5rem;
-    height: 3rem;
+    /* background: green; */
+    font-size: 2rem;
+    height: 5rem;
     color: white;
 }
 
@@ -65,12 +65,12 @@ article {
 }
 
 .article-section-vertical-line {
-    background: green;
+    /* background: green; */
     width: 0.25rem;
 }
 
 .article-section-horizontal-line {
-    background: green;
+    /* background: green; */
     height: 0.25rem;
     width: 100%;
 }
