@@ -9,17 +9,28 @@
     background: red;
 }
 
+.orange-background {
+    background: orange;
+}
+
+.yellow-background {
+    background: yellow;
+}
+
 .green-background {
     background: green;
 }
 
+.lightblue-background {
+    background: lightblue;
+}
+
 .blue-background {
-    
     background: blue;
 }
 
-.orange-background {
-    background: orange;
+.purple-background {
+    background: purple;
 }
 
 .white-background {
