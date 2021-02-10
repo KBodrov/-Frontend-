@@ -84,3 +84,58 @@
 /*             TOGGLE-BUTTONS section                  */
 /*                                                     */
 /*=====================================================*/
+.square-toggle-btn,
+.round-toggle-btn {
+    /* background: orange; */
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+    height: 2.125rem;
+}
+
+.square-toggle-btn span,
+.round-toggle-btn span {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #cccccc;
+    transition: 0.4s;
+}
+
+.square-toggle-btn span::before,
+.round-toggle-btn span::before {
+    position: absolute;
+    content: "";
+    height: 1.625rem;
+    width: 1.625rem;
+    left: 0.25rem;
+    bottom: 0.25rem;
+    background-color: white;
+    transition: 0.4s;
+}
+
+.square-toggle-btn input:checked + span,
+.round-toggle-btn input:checked + span {
+    background-color: #2196F3;
+}
+
+.square-toggle-btn input:focus + span,
+.round-toggle-btn input:focus + span {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.square-toggle-btn input:checked + span::before,
+.round-toggle-btn input:checked + span::before {
+    transform: translateX(1.875rem);
+}
+
+.round-toggle-btn span {
+    border-radius: 2.125rem;
+}
+
+.round-toggle-btn span::before {
+    border-radius: 50%;
+}
