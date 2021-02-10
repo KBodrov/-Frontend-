@@ -1,7 +1,7 @@
 /*=====================================================*/
 /*                                                     */
 /*                                                     */
-/*                  COLORS section                     */
+/*             BACKGROUND COLORS  section              */
 /*                                                     */
 /*                                                     */
 /*=====================================================*/
@@ -35,4 +35,26 @@
 
 .white-background {
     background: white;
+}
+
+
+/*=====================================================*/
+/*                                                     */
+/*              SLAVA's Colors  section                */
+/*                                                     */
+/*=====================================================*/
+.glorious-red-bg {
+    background: #FF5F5F;
+}
+
+.glorious-green-bg {
+    background: #00D248;
+}
+
+.glorious-blue-bg {
+    background: #5FA8FF;
+}
+
+.glorious-orange-bg {
+    background: #FFA031;
 }
