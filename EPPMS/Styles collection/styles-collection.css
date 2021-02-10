@@ -81,7 +81,7 @@
 
 /*=====================================================*/
 /*                                                     */
-/*             TOGGLE-BUTTONS section                  */
+/*             TOGGLE BUTTONS section                  */
 /*                                                     */
 /*=====================================================*/
 .square-toggle-btn,
@@ -138,4 +138,18 @@
 
 .round-toggle-btn span::before {
     border-radius: 50%;
+}
+
+
+
+/*=====================================================*/
+/*                                                     */
+/*              RADIO BUTTONS section                  */
+/*                                                     */
+/*=====================================================*/
+.radio-btn-container {
+    /* background: red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }

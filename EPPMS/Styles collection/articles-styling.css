@@ -131,9 +131,3 @@ article {
 .justify-start {
     justify-content: start;
 }
-
-.radio-btn-container {
-    /* background: red; */
-    display: flex;
-    justify-content: flex-start;
-}
