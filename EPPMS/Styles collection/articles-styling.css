@@ -124,6 +124,10 @@ article {
 /*                                                     */
 /*                                                     */
 /*=====================================================*/
+.additional-height {
+    min-height: 5rem;
+}
+
 .justify-start {
     justify-content: start;
 }
