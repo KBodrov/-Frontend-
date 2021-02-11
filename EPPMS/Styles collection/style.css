@@ -95,7 +95,7 @@ main {
 }
 
 .sidebar-row {
-    height: 2rem;
+    height: 3rem;
     display: flex;
     flex-direction: row;
 }
@@ -105,7 +105,7 @@ main {
 /*===============================================*/
 .sidebar-row:first-child {
     justify-content: flex-end;
-    height: 2.5rem;
+    height: 3rem;
     display: flex;
     align-items: center;
 }
@@ -120,7 +120,7 @@ main {
 }
 
 .sidebar-searchbox input {
-    background: rgb(143, 201, 255);
+    background: #ece6ff;
     border: none;
     outline: none;
     line-height: 1.95rem;
@@ -156,7 +156,7 @@ main {
 
 .sidebar-btn {
     /* background: lightcoral; */
-    width: 2rem;
+    width: 3rem;
 }
 
 .hide-sidebar-btn {
@@ -190,7 +190,7 @@ main {
 }
 
 .sidebar div a i {
-    width: 2rem;
+    width: 3rem;
     /* background: red; */
     display: flex;
     justify-content: center;
@@ -201,7 +201,7 @@ main {
 .sidebar div a span {
     /* background: pink; */
     font-size: 1.5rem;
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
     color: rgb(60, 60, 60);
 }
 
@@ -219,7 +219,7 @@ main {
 }
 
 #check:checked ~ .sidebar {
-    width: 2rem;
+    width: 3rem;
 }
 
 #check:checked ~ .sidebar div a:hover {
