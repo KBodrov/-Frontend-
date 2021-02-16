@@ -221,6 +221,7 @@ main {
 
 #check:checked ~ .sidebar {
     width: 3rem;
+    min-width: 3rem;
 }
 
 #check:checked ~ .sidebar div a:hover {
