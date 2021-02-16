@@ -38,10 +38,15 @@ function parseClasses()
 {
     const itemsList = document.querySelectorAll(".content-item");
     const codesList = document.querySelectorAll(".content-code");
+    const htmlList = document.querySelectorAll(".content-html");
     for (i = 0; i < itemsList.length; i++)
     {
         codesList[i].innerHTML = '';
+        htmlList[i].innerHTML = '';
         const listOfClasses = itemsList[i].childNodes[1].classList;
+        const innerContent = itemsList[i].innerHTML;
+        const secondTextNode = document.createTextNode(innerContent);
+        htmlList[i].appendChild(secondTextNode);
         for (j = 0; j < listOfClasses.length; j++)
         {
             const textNode = document.createTextNode(listOfClasses[j]);
