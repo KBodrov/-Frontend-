@@ -47,6 +47,7 @@ function parseClasses()
         const innerContent = itemsList[i].innerHTML;
         const secondTextNode = document.createTextNode(innerContent);
         htmlList[i].appendChild(secondTextNode);
+        w3CodeColor(htmlList[i]);
         for (j = 0; j < listOfClasses.length; j++)
         {
             const textNode = document.createTextNode(listOfClasses[j]);
