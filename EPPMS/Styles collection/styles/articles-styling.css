@@ -107,14 +107,23 @@ article {
     font-weight: 700;
 }
 
-/* .content-item {
-    background: blue;
-} */
+.content-item,
+.content-item-header {
+    /* background: blue; */
+    flex: 1;
+} 
 
-/* .content-code {
-    background:red;
-} */
+.content-html,
+.content-html-header {
+    /* background: green; */
+    flex: 2;
+}
 
+.content-code,
+.content-code-header {
+    /* background:red; */
+    flex: 1;
+}
 
 
 /*=====================================================*/
