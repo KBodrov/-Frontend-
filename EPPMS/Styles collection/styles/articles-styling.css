@@ -125,7 +125,13 @@ article {
     flex: 1;
 }
 
-/*  */
+.content-html,
+.content-html ~ span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+}
 
 /*=====================================================*/
 /*                                                     */
