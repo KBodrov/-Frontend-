@@ -1,3 +1,8 @@
+//----------------------------------------------------------------------------------|
+//                                                                                  |
+//                 Change sidebar show/hide icon on click                           |
+//                                                                                  |
+//----------------------------------------------------------------------------------|
 const hideSidebarBtn = document.getElementById("hide-sidebar-btn");
 const menuArrow = document.getElementById("sidebar-btn");
 
@@ -7,7 +12,11 @@ hideSidebarBtn.addEventListener("click", () => {
 
 
 
-
+//----------------------------------------------------------------------------------|
+//                                                                                  |
+//         Load content from different html-pages to Article section                |
+//                                                                                  |
+//----------------------------------------------------------------------------------|
 const menuSidebar = document.getElementById("sidebar");
 menuSidebar.addEventListener("click", clickHandler);
 
@@ -34,6 +43,13 @@ function returnHTML(file_id) {
     });
 }
 
+
+
+//----------------------------------------------------------------------------------|
+//                                                                                  |
+//         Parse Classes and add HTML and Classes content to page                   |
+//                                                                                  |
+//----------------------------------------------------------------------------------|
 function parseClasses()
 {
     const itemsList = document.querySelectorAll(".content-item");
