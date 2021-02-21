@@ -73,3 +73,46 @@ function parseClasses()
         }
     }
 }
+
+
+
+//----------------------------------------------------------------------------------|
+//                                                                                  |
+//                          Copy to clipboard function                              |
+//                                                                                  |
+//----------------------------------------------------------------------------------|
+function copyToClipboard(text) {
+    const textAreaForCopying = document.createElement("textarea");
+
+    textAreaForCopying.style.position = 'fixed';
+    textAreaForCopying.style.top = 0;
+    textAreaForCopying.style.left = 0;
+
+    textAreaForCopying.style.width = '1em';
+    textAreaForCopying.style.height = '1em';
+
+    textAreaForCopying.style.padding = 0;
+
+    textAreaForCopying.style.border = 'none';
+    textAreaForCopying.style.outline = 'none';
+    textAreaForCopying.style.boxShadow = 'none';
+
+    textAreaForCopying.style.background = 'transparent';
+
+    textAreaForCopying.value = text;
+
+    document.body.appendChild(textAreaForCopying);
+    textAreaForCopying.focus();
+    textAreaForCopying.select();
+
+    try {
+        const successful = document.execCommand('copy');
+        const msg = successful ? 'successful' : 'unsuccessful';
+        console.log('Copying text was ' + msg);
+    } catch (err) {
+        console.log('Oops, unable to copy');
+    }
+
+    document.body.removeChild(textAreaForCopying);
+}
+
