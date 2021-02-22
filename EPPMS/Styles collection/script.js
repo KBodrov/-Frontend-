@@ -116,3 +116,23 @@ function copyToClipboard(text) {
     document.body.removeChild(textAreaForCopying);
 }
 
+
+
+//----------------------------------------------------------------------------------|
+//                                                                                  |
+//                                Click Handler                                     |
+//                                                                                  |
+//----------------------------------------------------------------------------------|
+document.body.addEventListener('click', function(event) {
+    if (event.target.closest('.content-html')) {
+        // console.log(event.target.innerHTML);
+        // const copyingSoutce = document.querySelectorAll(".content-item");
+        // const copyingTarget = document.querySelectorAll(".content-code");
+        console.log(event.target.innerText);
+    } else if (event.target.closest('.content-code')) {
+        console.log(event.target.innerText);
+    } else {
+        // console.log("nope");
+    }
+})
+

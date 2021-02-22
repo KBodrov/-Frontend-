@@ -133,6 +133,15 @@ article {
     flex-direction: column;
 }
 
+.content-html > span {
+    pointer-events: none;
+}
+
+.content-html,
+.content-code {
+    cursor: pointer;
+}
+
 /*=====================================================*/
 /*                                                     */
 /*                                                     */
