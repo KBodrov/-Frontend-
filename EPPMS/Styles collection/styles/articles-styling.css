@@ -140,6 +140,27 @@ article {
 .content-html,
 .content-code {
     cursor: pointer;
+    position: relative;
+}
+
+.content-code:after {
+    content: "Скопировать в буфер обмена";
+    align-self: flex-start;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+    width: 15rem;
+    min-height: 1rem;
+    color: white;
+    text-align: center;
+    background: rgba(0,0,0,0.75);
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    margin-top: -3rem;
+}
+
+.content-code:hover:after {
+    visibility: visible;
 }
 
 /*=====================================================*/
