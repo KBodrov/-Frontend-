@@ -14,12 +14,27 @@ article {
     flex-direction: column;
 }
 
-.article-scrollable-container {
+
+
+/*=====================================================*/
+/*                                                     */
+/*                   Scrollability                     */
+/*                                                     */
+/*=====================================================*/
+.article-scrollableY-container {
     flex-direction: column;
     flex-grow: 1;
     flex-basis: 0;
     overflow-y: auto;
     width: 100%;
+}
+
+.article-scrollableX-container {
+    flex-direction: row;
+    flex-grow: 1;
+    flex-basis: 0;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 
@@ -107,9 +122,14 @@ article {
     min-width: 0.25rem;
 }
 
-/* .content-container {
-    background: yellow;
-} */
+.content-container {
+    /* background: yellow; */
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background: white;
+    font-size: 1rem;
+} 
 
 .content-header {
     background: rgb(173, 173, 173);
@@ -155,11 +175,13 @@ article {
 }
 
 
+
 /*=====================================================*/
 /*                                                     */
 /*                     Tooltips                        */
 /*                                                     */
 /*=====================================================*/
+
 /* Tooltip body */
 .content-classes:before {
     content: "Скопировать в буфер обмена";
@@ -177,14 +199,30 @@ article {
     margin-top: -3rem;
 }
 
+.content-html:before {
+    content: "Скопировать в буфер обмена";
+    align-self: center;
+    position: absolute;
+    z-index: 1;
+    width: 15rem;
+    min-height: 1rem;
+    color: white;
+    background: rgba(0,0,0,0.75);
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    top: 0;
+    margin-top: -1rem;
+
+}
+
 /* Tooltip arrow */
-.content-classes:after {
+.content-classes:after{
     visibility: hidden;
     content: " ";
     align-self: flex-start;
     position: absolute;
     left: 50%;
-    margin-top: -0.35rem;
+    margin-top: -0.4rem;
     margin-left: -0.6rem;
     border-width: 0.6rem;
     border-style: solid;
@@ -199,6 +237,11 @@ article {
 .content-classes:active:before,
 .content-classes:focus:before {
     content: "Скопировано!";
+}
+
+.content-classes:active,
+.content-classes:focus {
+    background: lightgreen;
 }
 
 
