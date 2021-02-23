@@ -196,6 +196,11 @@ article {
     visibility: visible;
 }
 
+.content-classes:active:before,
+.content-classes:focus:before {
+    content: "Скопировано!";
+}
+
 
 /*=====================================================*/
 /*                                                     */
