@@ -53,7 +53,7 @@ function returnHTML(file_id) {
 function parseClasses()
 {
     const itemsList = document.querySelectorAll(".content-item");
-    const codesList = document.querySelectorAll(".content-code");
+    const codesList = document.querySelectorAll(".content-classes");
     const htmlList = document.querySelectorAll(".content-html");
     for (i = 0; i < itemsList.length; i++)
     {
@@ -127,9 +127,9 @@ document.body.addEventListener('click', function(event) {
     if (event.target.closest('.content-html')) {
         // console.log(event.target.innerHTML);
         // const copyingSoutce = document.querySelectorAll(".content-item");
-        // const copyingTarget = document.querySelectorAll(".content-code");
+        // const copyingTarget = document.querySelectorAll(".content-classes");
         console.log(event.target.innerText);
-    } else if (event.target.closest('.content-code')) {
+    } else if (event.target.closest('.content-classes')) {
         console.log(event.target.innerText);
     } else {
         // console.log("nope");

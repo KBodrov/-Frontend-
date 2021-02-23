@@ -119,8 +119,8 @@ article {
     flex: 2;
 }
 
-.content-code,
-.content-code-header {
+.content-classes,
+.content-classes-header {
     /* background:red; */
     flex: 1;
 }
@@ -138,12 +138,12 @@ article {
 }
 
 .content-html,
-.content-code {
+.content-classes {
     cursor: pointer;
     position: relative;
 }
 
-.content-code:after {
+.content-classes:after {
     content: "Скопировать в буфер обмена";
     align-self: flex-start;
     position: absolute;
@@ -159,7 +159,7 @@ article {
     margin-top: -3rem;
 }
 
-.content-code:hover:after {
+.content-classes:hover:after {
     visibility: visible;
 }
 
