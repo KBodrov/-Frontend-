@@ -33,6 +33,12 @@ article {
 /*                                                     */
 /*                                                     */
 /*=====================================================*/
+
+/*=====================================================*/
+/*                                                     */
+/*                Article alignment                    */
+/*                                                     */
+/*=====================================================*/
 .article-section,
 .article-section-header,
 .article-section-row,
@@ -79,6 +85,11 @@ article {
     flex-direction: column;
 }
 
+/*=====================================================*/
+/*                                                     */
+/*                   Table alignment                   */
+/*                                                     */
+/*=====================================================*/
 .content-row {
     /* background: red; */
     min-height: 2rem;
@@ -143,7 +154,14 @@ article {
     position: relative;
 }
 
-.content-classes:after {
+
+/*=====================================================*/
+/*                                                     */
+/*                     Tooltips                        */
+/*                                                     */
+/*=====================================================*/
+/* Tooltip body */
+.content-classes:before {
     content: "Скопировать в буфер обмена";
     align-self: flex-start;
     position: absolute;
@@ -159,9 +177,25 @@ article {
     margin-top: -3rem;
 }
 
+/* Tooltip arrow */
+.content-classes:after {
+    visibility: hidden;
+    content: " ";
+    align-self: flex-start;
+    position: absolute;
+    left: 50%;
+    margin-top: -0.35rem;
+    margin-left: -0.6rem;
+    border-width: 0.6rem;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.75) transparent transparent transparent;
+}
+
+.content-classes:hover:before,
 .content-classes:hover:after {
     visibility: visible;
 }
+
 
 /*=====================================================*/
 /*                                                     */
