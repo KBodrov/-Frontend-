@@ -25,8 +25,7 @@ body {
 }
 
 .external-container,
-.tooltipable-container,
-.content-container {
+.tooltipable-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +51,9 @@ body {
 
 .content-container {
     background: lightblue;
+    display: flex;
     height: 8rem;
+    align-items: center;
 }
 
 .tooltipable-container:before {
