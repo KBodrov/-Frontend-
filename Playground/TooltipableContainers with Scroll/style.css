@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: white;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    display: flex;
+    height: 100%;
+    /* background: brown; */
+}
+
+body {
+    width: 100%;
+    /* background: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.external-container,
+.tooltipable-container,
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.external-container {
+    background: red;
+    width: 10rem;
+    height: 5rem;
+    position: relative;
+}
+
+.tooltipable-container {
+    background: green;
+    width: 9rem;
+    height: 4rem;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.content-container {
+    background: lightblue;
+    width: 8rem;
+    height: 3rem;
+}
+
+.tooltipable-container:before {
+    background: rgba(0,0,0,0.75);
+    content: "Скопировать в буфер обмена";
+    color: white;
+    text-align: center;
+    width: 15rem;
+    min-height: 1rem;
+    align-self: flex-start;
+    position: absolute;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    margin-top: -3rem;
+    visibility: hidden;
+}
+
+.tooltipable-container:after {
+    border-style: solid;
+    border-width: 0.6rem;
+    border-color: rgba(0,0,0,0.75) transparent transparent transparent;
+    content: " ";
+    align-self: flex-start;
+    position: absolute;
+    margin-top: -0.5rem;
+    margin-left: -0.6rem;
+    left: 50%;
+    visibility: hidden;
+}
+
+.tooltipable-container:hover:before,
+.tooltipable-container:hover:after {
+    visibility: visible;
+}
+
+.tooltipable-container:active:before,
+.tooltipable-container:focus:before {
+    content: "Скопировано!";
+}
+
+.tooltipable-container:active,
+.tooltipable-container:focus {
+    background: lightgreen;
+}
